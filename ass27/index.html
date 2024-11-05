@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="disp"></h1>
+    <script>
+        const temp=parseInt(prompt("Enter the  temperature :"))
+        const unit=prompt("Enter the unit:")
+        const disp=document.getElementById("disp")
+        if("F"==unit)
+       {
+        const cel=(5/9)*(temp-32)
+        const f=cel.toFixed(1);
+        console.log(f)
+        disp.innerHTML=`${temp}F is equal to ${f}C`;
+        
+       }
+       else{
+        const far=(temp*(9/5))+32
+        const f=far.toFixed(1);
+        console.log("f")
+
+        disp.innerHTML=`${temp}C is equal to ${f}F`;
+
+
+       }
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="prin"></h1>
+    <script>
+        const prin = document.getElementById("prin")
+        const score = parseInt( prompt("Enter the student score :"))
+        if(score>=90 & score <= 100){
+           prin.innerHTML= `Grade:A`
+        }
+        else if(score>=80 & score <= 89){
+           prin.innerHTML= `Grade:B`
+        }
+        else if(score>=70 & score <= 79){
+           prin.innerHTML= `Grade:C`
+        }
+        else if(score>=60 & score <= 69){
+           prin.innerHTML= `Grade:D`
+        }
+        else {
+           prin.innerHTML= `Grade:F`
+        }
+    </script>
+</body>
+</html>

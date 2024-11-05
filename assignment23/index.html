@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .dash{
+        background-color: burlywood;
+        border: 1px solid black;
+        height:100px;
+        width:100px;
+        position: static;
+        left: 100px;
+        right: 100px;
+        top: 100px;
+        bottom: 100px;
+         }
+        .dash_1{
+        background-color: rgb(135, 200, 222);
+        border: 1px solid black;
+        height:100px;
+        width:100px;
+        position:relative;
+        left: 10px;
+        top: -10px;
+         }
+        .dash_2{
+        background-color: rgb(120, 228, 24);
+        border: 1px solid black;
+        height:100px;
+        width:100px;
+        position:fixed;
+        bottom: 2px;
+        right: 0px;
+         }
+         .dash_4{
+        background-color: rgb(201, 24, 184);
+        border: 1px solid black;
+        height:100px;
+        width:100px;
+        position:absolute;
+        bottom: 0px;
+        right: 10px;
+         }
+         .dash_3{
+        background-color: rgb(94, 95, 93);
+        border: 1px solid black;
+        height:500px;
+        width:500px;
+        position:relative;
+        margin: 100px;
+       }
+         
+</style>
+<body>
+    <div class="dash">static</div>
+    <div class="dash_1">relative</div>
+    <div class="dash_2">fixed</div>
+    <div class="dash_3">
+        <div class="dash_4"> absolute</div>
+    </div>
+
+</body>
+</html>
